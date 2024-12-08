@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=League+Spartan:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+  }
+
+  [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  [data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+
+  [data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }

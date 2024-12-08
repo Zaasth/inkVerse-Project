@@ -1,0 +1,22 @@
+section {
+    height: auto;
+    background-color: #B591D6;
+    color: white;
+
+    background: url("/assets/imgs/fundo-about.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#studio-img {
+    width: 25rem;
+    height: 35rem;
+}
+
+.sumir {
+    visibility:hidden;
+}
