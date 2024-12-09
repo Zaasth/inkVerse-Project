@@ -5,10 +5,14 @@ import { ArtistasComponent } from "../artistas/artistas.component";
 import { ParalaxArtistasComponent } from "../paralax-artistas/paralax-artistas.component";
 import { ParalaxAboutComponent } from "../paralax-about/paralax-about.component";
 import { ParalaxMapsComponent } from "../paralax-maps/paralax-maps.component";
+import { AvaliacoesComponent } from "../avaliacoes/avaliacoes.component";
+import { ParalaxAvaliacoesComponent } from "../paralax-avaliacoes/paralax-avaliacoes.component";
+import { MapsComponent } from "../maps/maps.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, AboutComponent, ArtistasComponent, ParalaxArtistasComponent, ParalaxAboutComponent, ParalaxMapsComponent],
+  imports: [HeaderComponent, AboutComponent, ArtistasComponent, ParalaxArtistasComponent, ParalaxAboutComponent, ParalaxMapsComponent, AvaliacoesComponent, ParalaxAvaliacoesComponent, MapsComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
