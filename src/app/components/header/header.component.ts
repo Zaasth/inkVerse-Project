@@ -1,9 +1,10 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IntersectionService } from '../../services/intersection.service';
+import { MenuComponent } from "../menu/menu.component";
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [MenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

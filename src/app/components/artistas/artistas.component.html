@@ -7,11 +7,12 @@
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
                 <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
                      [src]="artista.img" alt="investment-seed-round" />
-                <button style="position: absolute; bottom: 10px; right: 10px; z-index: 2;" 
+                     <a [routerLink]="['/artist', artista.id]"><button routerLinkActive="router-link-active"  style="position: absolute; bottom: 10px; right: 10px; z-index: 2;" 
                         class="rounded-md bg-white py-2 px-4 border border-transparent text-center text-sm text-black transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 hover:text-white active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" 
                         type="button">
                     Gallery
                 </button>
+            </a>
             </div>
             <div class="my-4 mx-6 border-t border-white"></div>
             <div class="p-4">

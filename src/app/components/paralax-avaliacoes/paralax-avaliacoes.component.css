@@ -1,5 +1,6 @@
 section {
-    background-image: url("https://m.media-amazon.com/images/S/pv-target-images/543fce1906fb5f602dbeafe171864f28d7f3955bfbb38794bd6a67c0dc1cbca9.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("/assets/imgs/paralax.jpg");
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -10,5 +11,4 @@ section {
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    opacity: 0.8; 
 }
