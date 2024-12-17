@@ -6,7 +6,7 @@
   
   .portfolio-item img {
     width: 150px;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -76,3 +76,14 @@
     background-color: #545454;
   }
   
+  @media (min-width: 1268px) {
+    #imagem-perfil{
+      object-position: center 44%;
+      object-fit: contain;
+      background-color: white;
+    }
+  }
+
+  #imagem-perfil{
+    object-position: center 14%
+  }

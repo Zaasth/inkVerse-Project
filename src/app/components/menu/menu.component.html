@@ -1,14 +1,52 @@
-<section>
+<section style="background-color: #F78C2F;">
+    <menu>
+      <nav style="background-color: #F78C2F;" class="relative">
+        <div class="container mx-auto flex items-center justify-center p-6 text-gray-600 capitalize dark:text-gray-300">
+          <!-- Logo ou Título -->
 
-        <menu>
-            <nav style="background-color: #F78C2F;" class="">
-                <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-                    <a href="#" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-purple-500 mx-1.5 sm:mx-6">home</a>
-                    @for (artista of artistas; track $index) {
-                    <a href="/artist/{{artista.id}}" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-purple-500 mx-1.5 sm:mx-6">{{artista.nome}}</a>
-                }
-                </div>
-            </nav>
-        </menu>
+          <button 
+          (click)="toggleMenu()"
+          style="justify-items: right;"
+            id="menu-toggle" 
+            class="text-gray-800 dark:text-gray-200 lg:hidden focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+  
+          <!-- Menu -->
+          <div id="menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center w-full lg:w-auto">
+            <a href="#" class="block lg:inline-block border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-purple-500 mx-1.5 sm:mx-6">
+              Home
+            </a>
+            @for (artista of artistas; track $index) {
+            <a href="/artist/{{artista.id}}" class="block lg:inline-block border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-purple-500 mx-1.5 sm:mx-6">
+              {{artista.nome}}
+            </a>
+            }
+          </div>
+        </div>
+      </nav>
+    </menu>
+    @if (isMenuOpen) {
+        <section style="height: 100vh; width: 100%; background-color: #F78C2F;">
+            <a  
+                    href="/"
+                  class="block border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-purple-500 my-2 text-white text-center mt-10">
+                  Home
+                </a>
+            @for (artista of artistas; track $index) {
+                <a 
+                  href="/artist/{{artista.id}}" 
+                  class="block border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-purple-500 my-2 text-white text-center mt-10">
+                  {{artista.nome}}
+                </a>
+              }
+        </section>
+      }
+  </section>
+  
 
-</section>
+
+  
+  

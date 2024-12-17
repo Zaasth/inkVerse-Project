@@ -22,7 +22,9 @@
     justify-content: center; 
 }
 
-#artistas:hover{
-    
-}
+@media (max-width: 768px) {
+    #artistas{
+        background: none;
+    }
+  }
 

@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { IntersectionService } from '../../services/intersection.service';
 import { MenuComponent } from "../menu/menu.component";
 
@@ -8,9 +8,16 @@ import { MenuComponent } from "../menu/menu.component";
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit{
   @ViewChild('headersection')observedElement!: ElementRef;
-  
+  @ViewChild('botao-start') botaoStart!: ElementRef;
+
+  startClick() {
+    const targetElement = document.getElementById('about-section');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   constructor(private intersectionService: IntersectionService) {}
 
