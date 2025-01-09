@@ -89,7 +89,7 @@ export class ArtistasComponent {
           "assets/imgs/trabalhos/Charles/job (10).JPG",
           "assets/imgs/trabalhos/Charles/job (11).JPG",
         ],
-        descricao: "",
+        descricao: "Foco em Lettering e fine line",
         celular: "(16) 982185145",
         instagram: "@charlesjohn.tattoo",
         link: "https://www.instagram.com/charlesjohn.tattoo/"
@@ -113,7 +113,7 @@ export class ArtistasComponent {
           "assets/imgs/trabalhos/Guaxi/job (12).jpg",
           "assets/imgs/trabalhos/Guaxi/job (13).jpg"
         ],
-        descricao: "Tatuador de realismo P&C e FullColor.",
+        descricao: "Guaxi - + 10 anos de experiência Artista premiado Especialista em realismo e full color Co-proprietário do Inkverse",
         celular: "(16) 992168819 ",
         instagram: "@guaxitattoo",
         link: "https://www.instagram.com/guaxitattoo/"
@@ -178,6 +178,32 @@ export class ArtistasComponent {
         celular: "(16) 993052372",
         instagram: "@vitorleitetattoo",
         link: "https://www.instagram.com/vitorleitetattoo/"
+      },
+      {
+        id: 8,
+        img: "assets/imgs/trabalhos/Shaw/perfil.jpg",
+        nome: "Shaw",
+        cargo: "Tattoo Artist",
+        trabalhos: [
+          "assets/imgs/trabalhos/Shaw/job (1).jpg",
+          "assets/imgs/trabalhos/Shaw/job (2).jpg",
+          "assets/imgs/trabalhos/Shaw/job (3).jpg",
+          "assets/imgs/trabalhos/Shaw/job (4).jpg",
+          "assets/imgs/trabalhos/Shaw/job (6).jpg",
+          "assets/imgs/trabalhos/Shaw/job (7).jpg",
+          "assets/imgs/trabalhos/Shaw/job (8).jpg",
+          "assets/imgs/trabalhos/Shaw/job (9).jpg",
+          "assets/imgs/trabalhos/Shaw/job (10).jpg",
+          "assets/imgs/trabalhos/Shaw/job (11).jpg",
+          "assets/imgs/trabalhos/Shaw/job (12).jpg",
+          "assets/imgs/trabalhos/Shaw/job (13).jpg",
+          "assets/imgs/trabalhos/Shaw/job (14).jpg",
+          "assets/imgs/trabalhos/Shaw/job (15).jpg",
+        ],
+        descricao: "",
+        celular: "(16) 991887004",
+        instagram: "@saanshawtattoo",
+        link: "https://www.instagram.com/saanshawtattoo//",
       }
     ];
 }
